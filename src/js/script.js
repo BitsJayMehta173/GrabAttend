@@ -43,14 +43,15 @@
             {body:"The Attendance Vote Limit has Crossed!"
         }); 
         }
-
+        let p=0;
       vote.addEventListener('click',()=>{
           getDoc(docRef)
         .then((doc)=>{
           limit=doc.data().limit;
         var n=parseInt(attnum.innerText);
           n=n+1;
-          if(n>=limit){
+          if(n>=limit+p){
+              p+=8;
               notice.style.display='block';
               
               if(Notification.permission==="granted"){
