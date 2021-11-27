@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+body{
+    padding:40px;
+    background-color: rgb(193, 55, 221);
+    font-family: 'Source Code Pro', monospace;
+}
+
+.entire{
+    background-color: rgb(204, 104, 224);
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+#attnum{
+    text-align: center;
+}
+
+#vote,#votezero{
+    width: 180px;
+    margin-top: 6px;
+}
+
+.mainbtns{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50%;
+}
+
+.leavebtn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50%;
+}
+
+.resetbtn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50%;
+}
+
+#resetvote{
+    width: 130px;
+}
+
+span,.resetnotice{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
 #notice{
-    display: block;
+    display: none;
+}
+
+#leave{
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    border: 1px rgb(163, 163, 163) solid;
+    padding: 3px;
+    background-color: rgb(236, 235, 235);
 }

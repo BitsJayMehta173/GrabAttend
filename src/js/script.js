@@ -15,9 +15,11 @@
 
       const app = initializeApp(firebaseConfig);
 
-      const db= getFirestore()
+      const db= getFirestore();
+      
+      const info=JSON.parse(localStorage.getItem('information'));
   
-      const colRef = collection(db, 'attendance')
+      const colRef = collection(db, info[0])
 
       const attnum = document.getElementById("attnum");
       const vote =document.getElementById("vote");
@@ -32,7 +34,7 @@
             attnum.innerHTML=current;
         })
 
-      const docRef =doc(db, 'attendance', 'M2L3Pw6PGWxEguVUGyDh')
+      const docRef =doc(db, info[0], 'attendance')
         
       let limit;
 
@@ -61,7 +63,7 @@
 
       let resvote;
       resetvote.addEventListener('click',()=>{
-          const docRef =doc(db, 'attendance', 'Qd3VFt7QVT9LkA6SAvtR')
+          const docRef =doc(db, info[0], 'reset')
           getDoc(docRef)
         .then((doc)=>{
           resvote=doc.data().resetreq;

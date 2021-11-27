@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/js/script.js">
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/class.css">
+    <title>GrabAttend</title>
 </head>
 <body>
-    <h1>GrabAttend</h1>
-    <h1 id="attnum">0</h1>
-    <button id="vote">VOTE</button>
-    <button id="votezero">RESET COUNTER NOW</button><span>  (This reset button is just for testing purpose)</span>
-    <h1 id="notice">GIVE ATTENDANCE</h1>
-    <br>
-    <br>
-    <br>
-    <h3>IF THE VOTE COUNT NEEDS TO BE RESET YOU CAN REQUEST FOR THE RESET COUNTER HERE</h1>
-    <button id="resetvote">RESET REQUEST</button>
-    <script type="module" src="../src/js/script.js"></script>
+    <div class="entire">
+        <h1 class="title">GrabAttend</h1>
+        <div class="classroom">
+                <input type="text" id="ccode" name="ccode" placeholder="Classroom Code (e.g: test)" ><br><br>
+                <input type="text" id="sname" name="sname" placeholder="Student's Name"><br><br>
+                <button id="joinbtn">JOIN</button>
+        </div>
+    </div>
+    <script type="module" src="/src/js/class.js"></script>
 </body>
 </html>
