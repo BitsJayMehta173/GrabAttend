@@ -18,6 +18,8 @@ For now the database is filled with quite small amount of data for the time bein
 
 1. Go to the [GrabAttend Webpage](https://grabattend.netlify.app/ "GrabAttend_Site").
 
+
+
 2.Use Your Classroom code:
 
 for now the list of Classroom codes are:-
@@ -28,9 +30,15 @@ for now the list of Classroom codes are:-
     
 Rest of the classroom will be added soon for the realtime use.
 
+
+
 3.Enter Your Name and then Join the Classroom
 
+
+
 4. If the classroom code exist you will be pushed to the attendance voting page of the classroom code.
+
+
 
 5.You can vote for the attandance call vote if it is time for attendance while also give voting reset request if you find the period is over.
 
