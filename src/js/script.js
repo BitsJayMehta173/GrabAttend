@@ -44,7 +44,9 @@
         }); 
         }
         let p=0;
+        let stop=0;
       vote.addEventListener('click',()=>{
+        if(stop==0){
           getDoc(docRef)
         .then((doc)=>{
           limit=doc.data().limit;
@@ -68,6 +70,10 @@
               num: n
           })
         })
+        stop=1;}
+        else{
+          alert('You Have Already Voted For this session');
+        }
       })
 
       votezero.addEventListener('click',()=>{
@@ -77,7 +83,9 @@
       })
 
       let resvote;
+      let resstop=0;
       resetvote.addEventListener('click',()=>{
+        if(resstop==0){
           const docRef =doc(db, info[0], 'reset')
           getDoc(docRef)
         .then((doc)=>{
@@ -90,4 +98,8 @@
               console.log('requested for Vote reset');
           })
             })
+          resstop=1;}
+          else{
+            alert('You already Gave Reset Request Once for this session');
+          }
       })
