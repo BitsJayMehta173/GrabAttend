@@ -12,7 +12,7 @@
 This is an Attendance Call Notifier webapp.
 The Project uses Firebase services to store, read and write the attendance votes in the firestore database which is reflected whenever we log into the classroom.
 
-For now the database is filled with quite small amount of data which will be managed and updated soon.
+For now the database is filled with quite small amount of data for the time being which will be managed and updated soon.
 
 > Procedure
 
