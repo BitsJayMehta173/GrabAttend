@@ -46,3 +46,18 @@ body{
     width: 220px;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 481px) {
+    .entire{
+        padding: 15px;
+        background-color: rgb(204, 104, 224);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+    body{
+        padding: 2px;
+        padding-top: 50px;
+    }
+  
+  }
