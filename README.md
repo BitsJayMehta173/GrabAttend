@@ -16,7 +16,7 @@ For now the database is filled with quite small amount of data for the time bein
 
 > Procedure
 
-1. Go to the GrabAttend Webpage.
+1. Go to the [GrabAttend Webpage](https://grabattend.netlify.app/ "GrabAttend_Site").
 1.Use Your Classroom code:
 for now the list of Classroom codes are:-
     *test
