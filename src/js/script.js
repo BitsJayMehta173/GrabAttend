@@ -37,12 +37,6 @@
       const docRef =doc(db, info[0], 'attendance')
         
       let limit;
-
-      function attendNotification(){
-        const notification= new Notification("GIVE ATTENDANCE FAST!",{
-          body:"The Attendance Vote Limit has Crossed!"
-        });
-      }
       
         function attendNotification(){
           const notification= new Notification("Give Attendance Fast!",
