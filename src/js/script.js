@@ -44,6 +44,12 @@
         });
       }
       
+        function attendNotification(){
+          const notification= new Notification("Give Attendance Fast!",
+            {body:"The Attendance Vote Limit has Crossed!"
+        }); 
+        }
+
       vote.addEventListener('click',()=>{
           getDoc(docRef)
         .then((doc)=>{
