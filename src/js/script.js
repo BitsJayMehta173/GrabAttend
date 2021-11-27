@@ -38,6 +38,11 @@
         
       let limit;
 
+      function attendNotification(){
+        const notification= new Notification("GIVE ATTENDANCE FAST!",{
+          body:"The Attendance Vote Limit has Crossed!"
+        });
+      }
       
       vote.addEventListener('click',()=>{
           getDoc(docRef)
@@ -47,7 +52,16 @@
           n=n+1;
           if(n>=limit){
               notice.style.display='block';
-              alert('GIVE ATTENDANCE');
+              
+              if(Notification.permission==="granted"){
+                attendNotification();
+              }
+              else if(Notification.permission !=="denied"){
+                Notification.requestPermission().then((permission)=>{
+                  attendNotification();
+                });
+              }
+
           }
           updateDoc(docRef,{
               num: n

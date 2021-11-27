@@ -21,7 +21,9 @@ const firebaseConfig = {
 const ccode=document.getElementById("ccode");
 const sname=document.getElementById("sname");
 const joinbtn=document.getElementById("joinbtn");
-
+if(Notification.permission !=="denied"){
+  Notification.requestPermission();
+}
 let info=[]
 let classlist=['attendance','cs101','ma201','test'];
 let flag=0;
