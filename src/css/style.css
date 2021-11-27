@@ -61,6 +61,7 @@ span,.resetnotice{
 
 #notice{
     display: none;
+    text-align: center;
 }
 
 #leave{

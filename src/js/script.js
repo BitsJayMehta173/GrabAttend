@@ -38,6 +38,11 @@
         
       let limit;
 
+      function attendNotification(){
+        const notification= new Notification("GIVE ATTENDANCE FAST!",{
+          body:"The Attendance Vote Limit has Crossed!"
+        });
+      }
       
         function attendNotification(){
           const notification= new Notification("Give Attendance Fast!",
@@ -53,15 +58,16 @@
           n=n+1;
           if(n>=limit){
               notice.style.display='block';
-              if(Notification.permission === "granted"){
+              
+              if(Notification.permission==="granted"){
                 attendNotification();
               }
-              else if(Notification.permission !== "denied"){
-                Notification.requestPermission().then(permission=>{
-                  if(permission === "granted"){
-                  attendNotification();}
+              else if(Notification.permission !=="denied"){
+                Notification.requestPermission().then((permission)=>{
+                  attendNotification();
                 });
               }
+
           }
           updateDoc(docRef,{
               num: n
