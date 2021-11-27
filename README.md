@@ -5,7 +5,7 @@
 **Work in Progress**
 
 > Link to the Site
-[Traversy Media](http://xyz.com "GrabAttend_Site")
+[GrabAttend](https://grabattend.netlify.app/ "GrabAttend_Site")
 
 >Info About the Project
 
