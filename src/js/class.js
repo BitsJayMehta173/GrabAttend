@@ -17,6 +17,10 @@ const firebaseConfig = {
 
     const colRef = collection(db, 'attendance')
 
+    if(Notification.permission !=="denied"){
+      Notification.requestPermission()
+      };
+
 const ccode=document.getElementById("ccode");
 const sname=document.getElementById("sname");
 const joinbtn=document.getElementById("joinbtn");
