@@ -1,5 +1,5 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-  import { getFirestore,collection,onSnapshot,updateDoc,doc,getDoc
+  import { getFirestore,collection,onSnapshot,updateDoc,doc,getDoc,setDoc
           } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore.js";
 
         
@@ -43,6 +43,8 @@
             {body:"The Attendance Vote Limit has Crossed!"
         }); 
         }
+
+        
         let p=0;
         let stop=0;
       vote.addEventListener('click',()=>{
