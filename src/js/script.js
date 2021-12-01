@@ -86,9 +86,20 @@
 
       let resvote;
       let resstop=0;
+
+        
+      function rescheck(resvote){
+        let docRef = doc(db, info[0], 'attendance');
+          updateDoc(docRef,{
+            limit:15,
+            num:0
+          })
+
+      }
+
       resetvote.addEventListener('click',()=>{
         if(resstop==0){
-          const docRef =doc(db, info[0], 'reset')
+          let docRef =doc(db, info[0], 'reset')
           getDoc(docRef)
         .then((doc)=>{
           resvote=doc.data().resetreq;
@@ -98,6 +109,13 @@
           })
           .then(()=>{
               console.log('requested for Vote reset');
+              console.log(resvote);
+              if(resvote>=20){
+              rescheck(resvote);
+            updateDoc(docRef,{
+              resetreq:0
+            })}
+              
           })
             })
           resstop=1;}
